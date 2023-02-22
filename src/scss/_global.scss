@@ -1,0 +1,71 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint1200) {
+        max-width: 1140px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 735px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint375) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint300) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Hyperspace Race Expanded', sans-serif;
+    background-color: #fff;
+
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'Hyperspace Race Expanded';
+    src: url('../fonts/Fontspring-DEMO-hyperspacerace-bold.otf');
+}
+
+.section__title{
+
+    @media (max-width: $breakpoint480) {
+        font-size: 30px !important;
+    }
+}
