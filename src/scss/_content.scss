@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 850px;
+    height: 90vh;
 
     display: flex;
     align-items: flex-end;
@@ -543,7 +543,7 @@
     }
 
     @media (max-width: $breakpoint480) {
-        padding: 20px 0px ;
+        padding: 40px 0px ;
     }
 
 
