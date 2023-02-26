@@ -316,6 +316,16 @@
                 align-items: flex-end;
                 gap: 12px;
 
+                &:hover{
+                    & img{
+                        transform: translateX(10px);
+                    }
+                }
+
+                & img{
+                    transition: all ease .3s;
+                }
+
                 @media (max-width: $breakpoint480) {
                     width: 100%;
                     align-items: flex-end;
