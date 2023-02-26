@@ -69,8 +69,10 @@ function burgerMenu() {
   
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination7',
     },
+    loop: true,
+
     
     spaceBetween: 30,
 
