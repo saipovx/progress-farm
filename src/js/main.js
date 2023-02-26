@@ -85,6 +85,10 @@ function burgerMenu() {
     spaceBetween: 10,
     loop: true,
 
+    pagination: {
+      el: '.swiper-pagination6',
+    },
+
 
         breakpoints: {
     // when window width is >= 320px
