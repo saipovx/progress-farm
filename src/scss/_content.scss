@@ -551,12 +551,7 @@
     & .news{
         display: flex;
         align-items: center;
-        gap: 10px;
 
-        @media (max-width: $breakpoint1200) {
-            overflow-x: auto; 
-            scroll-behavior: smooth
-        }
 
 
         &__title{
@@ -580,11 +575,23 @@
         }
 
         &__item{
-            flex: 0 1 25%;
+            max-width: 421px;
             width: 100%;
             padding: 10px 15px;
             border: 1px solid #9EC53B;
             transition: all ease .3s;
+            cursor: grabbing;
+
+            @media (max-width: $breakpoint1200) {
+                max-width: 100%;
+            }
+
+            &-img{
+                @media (max-width: $breakpoint1200) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
 
 
             
